@@ -1,0 +1,29 @@
+Box baseBox = Box.createHorizontalBox();
+            baseBox.add(Box.createHorizontalStrut(30));
+            baseBox.add(vBox);
+            baseBox.add(Box.createHorizontalStrut(30));
+jf.setContentPane(baseBox);
+
+
+vBox.add(Box.createVerticalStrut(20));
+
+button2.setSize(100, 5);
+
+JPanel panel01 = new JPanel();
+        panel01.add(title);
+        Font font = new Font("Times New Roman", Font.PLAIN, 20);
+        title.setHorizontalAlignment(SwingConstants.CENTER);
+        title.setFont(font);
+
+label01.setFont(new Font("Times New Roman",Font.PLAIN, 25));
+
+button1.setFont(new Font("ËÎÌו",Font.PLAIN, 15));
+
+JLabel label02 = new JLabel();
+        ImageIcon ii = new ImageIcon("img/02.png");
+        ii.setImage(ii.getImage().getScaledInstance(200, 355,Image.SCALE_SMOOTH));
+        label02.setIcon(ii);
+        JPanel panel02 = new JPanel();
+        //label01 = new JLabel();
+        panel02.add(label02);
+        label02.setHorizontalAlignment(SwingConstants.CENTER);

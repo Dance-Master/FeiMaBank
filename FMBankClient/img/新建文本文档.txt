@@ -1,0 +1,10 @@
+ImageIcon img= new ImageIcon("img/01.png");//这是背景图片
+            JLabel imgLabel =new JLabel(img);
+            //将背景图放在标签里。
+            jf.getLayeredPane().add(imgLabel);//注意这里是关键，将背景标签添加到jf的LayeredPane面板里。
+            imgLabel.setBounds(0,0,img.getIconWidth(), img.getIconHeight());//设置背景标签的位置
+            Container cp=jf.getContentPane();
+            cp.setLayout(new BorderLayout());
+            JButton but=new JButton("anniu");//创建按钮
+            cp.add(but,"North");//将按钮添加入窗口的内容面板
+            ((JPanel)cp).setOpaque(false); //注意这里，将内容面板设为透明。这样LayeredPane面板中的背景才能显示出来。
